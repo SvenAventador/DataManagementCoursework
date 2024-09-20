@@ -1,0 +1,3 @@
+DELETE 
+FROM [Type]
+WHERE Id = 3

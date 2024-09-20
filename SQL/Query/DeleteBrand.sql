@@ -1,0 +1,3 @@
+DELETE 
+FROM Brand
+WHERE Id = 3

@@ -1,0 +1,271 @@
+﻿<Page x:Class="ShopsGoodsProject.Windows.Client.Pages.PersonalAccount"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShopsGoodsProject.Windows.Client.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PersonalAccount">
+    <Border CornerRadius="12">
+        <Border.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Images/back-image.jpg"
+                    Stretch="None" />
+        </Border.Background>
+        <Border CornerRadius="10"                    
+            BorderThickness="2"
+            Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" 
+                                 EndPoint="1,1">
+                    <GradientStop Color="#462AD8" 
+                              Offset="0" />
+                    <GradientStop Color="#DA34AE" 
+                              Offset="0.75" />
+                    <GradientStop Color="#8A16C1" 
+                              Offset="1" />
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" 
+                                 EndPoint="1,0">
+                    <GradientStop Color="#060531" 
+                              Offset="0" />
+                    <GradientStop Color="#1B1448" 
+                              Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <StackPanel Width="500"
+                        Grid.Row="1"
+                        Orientation="Vertical"
+                        Margin="0,25,0,0">
+                    <TextBlock Text="Личный кабинет"
+                           Foreground="LightGray"
+                           FontSize="30"
+                           FontWeight="Medium"
+                           FontFamily="Montserrat"
+                           TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Margin="0,5,0,0" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Введите почту"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontWeight="Medium"
+                                   FontFamily="Montserrat"                             
+                                   Margin="0,35,0,0" 
+                                   Grid.Row="0"
+                                   Grid.Column="0" />
+                        <TextBox x:Name="UserEmail"
+                                 Text="{Binding UserEmail}"
+                                 FontSize="13"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"                            
+                                 Foreground="White"
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 BorderThickness="0,0,0,2"
+                                 Height="28"
+                                 VerticalContentAlignment="Center"
+                                 Margin="0,5,0,0"
+                                 Padding="20,0,0,0"
+                                 Grid.Row="1"
+                                 Grid.Column="0">
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="/Images/user-icon.png"
+                                            Stretch="None"
+                                            AlignmentX="Left" />
+                            </TextBox.Background>
+                        </TextBox>
+                        <TextBlock Text="Введите пароль"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontWeight="Medium"
+                                   FontFamily="Montserrat"                             
+                                   Margin="0,15,0,0" 
+                                   Grid.Row="2"
+                                   Grid.Column="0" />
+                        <PasswordBox x:Name="UserPassword"
+                                     FontSize="13"
+                                     FontWeight="Medium"
+                                     FontFamily="Montserrat"                            
+                                     Foreground="White"
+                                     CaretBrush="LightGray"
+                                     BorderBrush="DarkGray"
+                                     BorderThickness="0,0,0,2"
+                                     Height="28"
+                                     Padding="20,5,0,0"
+                                     VerticalContentAlignment="Top"
+                                     Grid.Row="4"
+                                     Grid.Column="0"
+                                     Margin="0,3,0,29">
+                            <PasswordBox.Background>
+                                <ImageBrush ImageSource="/Images/key-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left" />
+                            </PasswordBox.Background>
+                        </PasswordBox>
+                        <TextBlock Text="Повторите пароль"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontWeight="Medium"
+                                   FontFamily="Montserrat"                             
+                                   Margin="0,45,0,0"
+                                   Grid.Row="4"
+                                   Grid.Column="0" />
+                        <PasswordBox x:Name="RepeatPassword"
+                                     FontSize="13"
+                                     FontWeight="Medium"
+                                     FontFamily="Montserrat"                            
+                                     Foreground="White"
+                                     CaretBrush="LightGray"
+                                     BorderBrush="DarkGray"
+                                     BorderThickness="0,0,0,2"
+                                     Height="28"
+                                     VerticalContentAlignment="Center"
+                                     Margin="0,5,0,0"
+                                     Padding="20,0,0,0"
+                                     Grid.Row="5"
+                                     Grid.Column="0">
+                            <PasswordBox.Background>
+                                <ImageBrush ImageSource="/Images/key-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left" />
+                            </PasswordBox.Background>
+                        </PasswordBox>
+                        <TextBlock Text="Введите ФИО"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontWeight="Medium"
+                                   FontFamily="Montserrat"                             
+                                   Margin="0,35,0,0" 
+                                   Grid.Row="0"
+                                   Grid.Column="1" />
+                        <TextBox x:Name="UserFio"
+                                 Text="{Binding UserFio}"
+                                 FontSize="13"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"                            
+                                 Foreground="White"
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 BorderThickness="0,0,0,2"
+                                 Height="28"
+                                 VerticalContentAlignment="Center"
+                                 Margin="0,5,0,0"
+                                 Padding="20,0,0,0"
+                                 Grid.Row="1"
+                                 Grid.Column="1">
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="/Images/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left" />
+                            </TextBox.Background>
+                        </TextBox>
+                        <TextBlock Text="Дата рождения"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontWeight="Medium"
+                                   FontFamily="Montserrat"                             
+                                   Margin="0,15,0,0" 
+                                   Grid.Row="2"
+                                   Grid.Column="1" />
+                        <DatePicker x:Name="UserBirthday"
+                                    SelectedDate="{Binding UserBirthdayForBinding, Mode=TwoWay}"
+                                    FontSize="13"
+                                    FontWeight="Medium"
+                                    FontFamily="Montserrat"                            
+                                    Foreground="Black"
+                                    BorderBrush="DarkGray"
+                                    BorderThickness="0,0,0,2"
+                                    Height="28"
+                                    VerticalContentAlignment="Center"
+                                    Margin="0,5,0,29"
+                                    Grid.Row="3"
+                                    Grid.Column="1" 
+                                    HorizontalAlignment="Center" 
+                                    Grid.RowSpan="2" 
+                                    Width="250">
+                        </DatePicker>
+                        <TextBlock Text="Введите телефон"
+                                   Foreground="DarkGray"
+                                   FontSize="12"
+                                   FontWeight="Medium"
+                                   FontFamily="Montserrat"                             
+                                   Margin="0,45,0,0"
+                                   Grid.Row="4"
+                                   Grid.Column="1" />
+                        <TextBox x:Name="UserPhone"
+                                 Text="{Binding UserPhone}"
+                                 FontSize="13"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"                            
+                                 Foreground="White"
+                                 CaretBrush="LightGray"
+                                 BorderBrush="DarkGray"
+                                 BorderThickness="0,0,0,2"
+                                 Height="28"
+                                 VerticalContentAlignment="Center"
+                                 Margin="0,5,0,0"
+                                 Padding="20,0,0,0"
+                                 Grid.Row="5"
+                                 Grid.Column="1">
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="/Images/phone.png"
+                                        Stretch="None"
+                                        AlignmentX="Left" />
+                            </TextBox.Background>
+                        </TextBox>
+                    </Grid>
+                    <Button x:Name="SaveData"                          
+                            BorderThickness="0"
+                            Content="Сохранить изменения"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="0,50,0,0"
+                            Click="SaveData_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" 
+                                        Value="#462AD8" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" 
+                                             Value="True">
+                                        <Setter Property="Background" 
+                                                Value="#28AEED" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150" 
+                                        Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Page>

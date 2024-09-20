@@ -1,0 +1,31 @@
+﻿<Page x:Class="ShopsGoodsProject.Windows.Manager.Pages.Shops"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShopsGoodsProject.Windows.Manager.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="Shops">
+    <Grid>
+        <DataGrid AutoGenerateColumns="False"
+                  IsReadOnly="True" 
+                  Name="ShopGridModel">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" 
+                                    Binding="{Binding Id}"
+                                    Width="*" />
+                <DataGridTextColumn Header="Название магазина" 
+                                    Binding="{Binding ShopName}"
+                                    Width="*" />
+                <DataGridTextColumn Header="Адрес магазина" 
+                                    Binding="{Binding ShopAddress}"
+                                    Width="*" />
+                <DataGridTextColumn Header="Телефон для связи" 
+                                    Binding="{Binding ShopPhone}"
+                                    Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

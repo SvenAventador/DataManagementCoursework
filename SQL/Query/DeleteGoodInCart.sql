@@ -1,0 +1,3 @@
+DELETE
+FROM CartGood
+WHERE Id = 10

@@ -1,0 +1,9 @@
+.vs/
+.idea/
+ShopsGoodsProject/bin/
+ShopsGoodsProject/obj/
+ShopsGoodsProject/ShopsGoodsProject.csproj
+ShopsGoodsProject/ShopsGoodsProject.csproj.user
+ShopsGoodsLibrary/bin/
+ShopsGoodsLibrary/obj/
+ShopsGoodsLibrary/ShopsGoodsLibrary.csproj

@@ -1,0 +1,3 @@
+DELETE
+FROM Good
+WHERE Id = 4

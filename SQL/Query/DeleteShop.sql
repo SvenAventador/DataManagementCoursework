@@ -1,0 +1,3 @@
+DELETE 
+FROM Shop
+WHERE Id = 3
